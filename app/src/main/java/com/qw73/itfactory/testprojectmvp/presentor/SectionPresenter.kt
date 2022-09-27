@@ -5,17 +5,11 @@ import com.qw73.itfactory.testprojectmvp.service.SectionsListModel
 import com.qw73.itfactory.testprojectmvp.сontract.SectionsListContract
 
 
-class SectionPresenter : SectionsListContract.Presenter,
+class SectionPresenter(sectionsListView: SectionsListContract.View) : SectionsListContract.Presenter,
     SectionsListContract.Model.OnFinishListener {
 
-    private var sectionsListView: SectionsListContract.View?
-    private var sectionsListModel: SectionsListContract.Model
-
-    constructor(sectionsListView: SectionsListContract.View) {
-        this.sectionsListView = sectionsListView
-        this.sectionsListModel = SectionsListModel()
-    }
-
+    private var sectionsListView: SectionsListContract.View? = sectionsListView
+    private var sectionsListModel: SectionsListContract.Model = SectionsListModel()
 
     override fun onFinished(sectionsList: List<Section>?) {
         sectionsListView?.setDateRecyclerView(sectionsList!!)

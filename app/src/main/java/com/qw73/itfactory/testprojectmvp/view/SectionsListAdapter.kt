@@ -26,7 +26,7 @@ class SectionsListAdapter(private val sectionsList: List<Section>, private val c
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val currentSection = sectionsList[position]
         holder.bind(currentSection)
-        var cardsRV = sectionBinding.recyclerViewForCards
+        val cardsRV = sectionBinding.recyclerViewForCards
         val adapter = ItemListAdapter(currentSection.items)
         val itemLayoutManager = LinearLayoutManager(
             cardsRV.context, LinearLayoutManager.HORIZONTAL, false)
@@ -38,7 +38,7 @@ class SectionsListAdapter(private val sectionsList: List<Section>, private val c
                 override fun onItemClick(itemView: View?) {
                     if (selectedItems.size < 6) {
                         if (itemView?.isSelected == true) {
-                            unselectItem(itemView!!)
+                            unselectItem(itemView)
                         } else {
                             selectItem(itemView!!)
                         }
@@ -64,12 +64,12 @@ class SectionsListAdapter(private val sectionsList: List<Section>, private val c
 
     fun selectItem(v: View) {
         v.isSelected = true
-        selectedItems?.add(v)
+        selectedItems.add(v)
     }
 
     fun unselectItem(v: View) {
         v.isSelected = false
-        selectedItems?.remove(v)
+        selectedItems.remove(v)
     }
 
     override fun getItemCount(): Int {

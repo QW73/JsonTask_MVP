@@ -11,9 +11,6 @@ import retrofit2.Response
 
 class SectionsListModel : SectionsListContract.Model {
 
-    private val TAG: String = "SectionsListModel"
-    private var pageNumber = 1
-
     override fun getSectionsList(
         onFinishListener: SectionsListContract.Model.OnFinishListener,
         pageNumber: Int,

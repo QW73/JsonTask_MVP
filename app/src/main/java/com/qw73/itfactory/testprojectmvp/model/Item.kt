@@ -11,8 +11,7 @@ class Item {
 
     @SerializedName("image")
     @Expose
-    var image : Image?  = Image()
-
+    var image: Image? = Image()
 
     @SerializedName("title")
     @Expose
