@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Tvrma/AndroidStudioProjects/TestProjectMVP/app/src/main/res/drawable/effect.xml" value="0.1" />
+        <entry key="..\:/Users/Tvrma/AndroidStudioProjects/TestProjectMVP/app/src/main/res/drawable/selected_item_effect.xml" value="0.1" />
+        <entry key="..\:/Users/Tvrma/AndroidStudioProjects/TestProjectMVP/app/src/main/res/layout/activity_main.xml" value="0.246875" />
+        <entry key="..\:/Users/Tvrma/AndroidStudioProjects/TestProjectMVP/app/src/main/res/layout/layout_section.xml" value="0.1" />
+        <entry key="..\:/Users/Tvrma/AndroidStudioProjects/TestProjectMVP/app/src/main/res/layout/layout_section_cards.xml" value="0.12006079027355623" />
+        <entry key="..\:/Users/Tvrma/AndroidStudioProjects/TestProjectMVP/app/src/main/res/layout/layout_selection.xml" value="0.246875" />
+        <entry key="..\:/Users/Tvrma/AndroidStudioProjects/TestProjectMVP/app/src/main/res/layout/layout_selection_cards.xml" value="0.246875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
